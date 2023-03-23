@@ -35,11 +35,11 @@ function generatePassword() {
 }    
 function getPrompts(){
     choiceArr = [];
-    charLength = parseInt(prompt("How many characters do you want your password to be?"));
-    if(isNAN(charLength) || charLength < 8 || charLength > 128) {
-            alert("Password length must be between 8 and 126 characters");
-            return false;
-        }
+    // charLength = parseInt(prompt("How many characters do you want your password to be?"));
+    // if(isNAN(charLength) || charLength < 8 || charLength > 128) {
+    //         alert("Password length must be between 8 and 126 characters");
+    //         return false;
+    //     }
     if (confirm("Do you want your password to include lower case letters?")) {
             choiceArr = choiceArr.concat(lowerCase);
         }
